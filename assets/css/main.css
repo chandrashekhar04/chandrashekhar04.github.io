@@ -469,7 +469,7 @@ section,
 # Global Section Titles
 --------------------------------------------------------------*/
 .section-title {
-  text-align: center;
+  text-align: justify;
   padding-bottom: 60px;
   position: relative;
 }

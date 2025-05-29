@@ -759,20 +759,21 @@ section,
 
 .resume-btn {
   display: inline-block;
-  padding: 12px 28px;
+  padding: 12px 30px;
   font-size: 1rem;
-  color: #fff;
-  background-color: #007bff; /* Blue color */
-  border-radius: 25px; /* Rounded corners */
+  color: white;
+  background-color: #1d4ed8; /* Blue background */
+  border-radius: 30px;
   text-decoration: none;
   font-weight: 600;
-  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(29, 78, 216, 0.3);
 }
 
 .resume-btn:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-  box-shadow: 0 6px 12px rgba(0, 86, 179, 0.5);
+  background-color: #2563eb; /* Brighter blue on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(37, 99, 235, 0.4);
 }
 
 

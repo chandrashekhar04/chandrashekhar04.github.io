@@ -757,6 +757,25 @@ section,
   border: 2px solid var(--accent-color);
 }
 
+.resume-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff; /* Blue color */
+  border-radius: 25px; /* Rounded corners */
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resume-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  box-shadow: 0 6px 12px rgba(0, 86, 179, 0.5);
+}
+
+
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/

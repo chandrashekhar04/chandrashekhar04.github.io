@@ -884,30 +884,34 @@ section,
 # Portfolio Section
 --------------------------------------------------------------*/
 .portfolio .portfolio-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
   padding: 0;
   margin: 0 auto 20px auto;
   list-style: none;
-  text-align: center;
 }
 
 .portfolio .portfolio-filters li {
   cursor: pointer;
   display: inline-block;
-  padding: 8px 20px 10px 20px;
-  margin: 0;
+  padding: 10px 22px;
   font-size: 15px;
   font-weight: 500;
-  line-height: 1;
-  margin-bottom: 5px;
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
+  background-color: #f0f0f0;
+  color: #333;
   font-family: var(--heading-font);
+  list-style: none; /* extra safety */
+  user-select: none;
 }
 
 .portfolio .portfolio-filters li:hover,
 .portfolio .portfolio-filters li.filter-active {
+   background-color: var(--accent-color);
   color: var(--contrast-color);
-  background-color: var(--accent-color);
 }
 
 .portfolio .portfolio-filters li:first-child {

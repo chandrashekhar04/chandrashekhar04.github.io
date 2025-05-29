@@ -227,3 +227,72 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+const slides = document.querySelector('.slides');
+const dots = document.querySelectorAll('.dot');
+const headings = document.querySelectorAll('.achievement-heading');
+const achievementText = document.getElementById('achievement-text');
+
+const texts = [
+  `<p><strong>Achievement One:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et arcu vitae urna semper pretium.</p>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Morbi fringilla, metus vel fermentum dapibus, nisl nulla maximus purus.</p>`,
+
+  `<p><strong>Achievement Two:</strong> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+   <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>`
+];
+
+let currentIndex = 0;
+let slideInterval = null;
+const slideDelay = 3000; 
+const transitionTime = 1000; 
+
+function showSlide(index) {
+  currentIndex = index % dots.length;
+  if (currentIndex < 0) currentIndex = dots.length - 1;
+
+  slides.style.transform = `translateX(-${currentIndex * 50}%)`;
+
+  dots.forEach(dot => dot.classList.remove('active'));
+  dots[currentIndex].classList.add('active');
+
+  headings.forEach(h => h.classList.remove('active'));
+  headings[currentIndex].classList.add('active');
+
+  achievementText.innerHTML = texts[currentIndex];
+}
+
+function nextSlide() {
+  showSlide(currentIndex + 1);
+}
+
+function startAutoSlide() {
+  slideInterval = setInterval(() => {
+    nextSlide();
+  }, slideDelay + transitionTime);
+}
+
+function stopAutoSlide() {
+  clearInterval(slideInterval);
+}
+
+dots.forEach(dot => {
+  dot.addEventListener('click', () => {
+    stopAutoSlide();
+    const index = parseInt(dot.getAttribute('data-index'));
+    showSlide(index);
+    startAutoSlide();
+  });
+});
+
+headings.forEach(heading => {
+  heading.addEventListener('click', () => {
+    stopAutoSlide();
+    const index = parseInt(heading.getAttribute('data-index'));
+    showSlide(index);
+    startAutoSlide();
+  });
+});
+
+// Initialize
+showSlide(0);
+startAutoSlide();

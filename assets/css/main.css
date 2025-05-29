@@ -761,8 +761,8 @@ section,
   display: inline-block;
   padding: 12px 30px;
   font-size: 1rem;
-  color: white;
-  background-color: #1d4ed8; /* Blue background */
+  color: black;
+  background-color: gray; /* Blue background */
   border-radius: 30px;
   text-decoration: none;
   font-weight: 600;
@@ -771,9 +771,8 @@ section,
 }
 
 .resume-btn:hover {
-  background-color: #2563eb; /* Brighter blue on hover */
-  transform: translateY(-2px);
-  box-shadow: 0 6px 14px rgba(37, 99, 235, 0.4);
+  background-color: #1d4ed8; /* Blue background */
+  color: white;
 }
 
 

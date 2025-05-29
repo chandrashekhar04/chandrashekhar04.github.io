@@ -762,12 +762,10 @@ section,
   padding: 12px 30px;
   font-size: 1rem;
   color: black;
-  background-color: gray; /* Blue background */
+  background-color: #cccccc; /* Blue background */
   border-radius: 30px;
   text-decoration: none;
   font-weight: 600;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  box-shadow: 0 4px 10px rgba(29, 78, 216, 0.3);
 }
 
 .resume-btn:hover {

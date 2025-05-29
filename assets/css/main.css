@@ -981,6 +981,22 @@ section,
   bottom: 0;
 }
 
+.project-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 1rem;
+  color: black;
+  background-color: #cccccc; /* Blue background */
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.project-btn:hover {
+  background-color: #1d4ed8; /* Blue background */
+  color: white;
+}
+
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/

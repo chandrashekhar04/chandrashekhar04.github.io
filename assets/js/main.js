@@ -234,11 +234,11 @@ const headings = document.querySelectorAll('.achievement-heading');
 const achievementText = document.getElementById('achievement-text');
 
 const texts = [
-  `<p><strong>Achievement One:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et arcu vitae urna semper pretium.</p>
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Morbi fringilla, metus vel fermentum dapibus, nisl nulla maximus purus.</p>`,
+  `<p><strong>Dashing Debut of the Year</strong> In my very first year, I gave my best to every task — with passion, creativity, and full dedication.</p>
+   <p>My efforts were recognized with the Dashing Debut Award, given to the most promising newcomer. A proud milestone that marks the start of my professional journey.</p>`,
 
-  `<p><strong>Achievement Two:</strong> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-   <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>`
+  `<p><strong>Standout Performer</strong> Halfway through the year, my consistent efforts and results earned me the Standout Performer recognition.</p>
+   <p>It was a moment of appreciation that encouraged me to keep pushing boundaries and aim higher.</p>`
 ];
 
 let currentIndex = 0;
